@@ -1,0 +1,194 @@
+:root {
+    --main-black: rgb(0, 0, 0);
+    --main-white: rgb(255, 255, 255);
+    --main-purple: rgb(122, 28, 172);
+    --main-plite: rgb(173, 73, 225);
+    --main-logo: "Satisfy", sans-serif;
+    --main-font: "Red Hat Display", sans-serif;
+    --main-button: 15px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-white);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.nav-links li {
+    padding: 10px;
+    margin: 0px 20px;
+    font-size: 2vh;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.logo {
+    margin: 0px 10px;
+    font-size: 4.5vh;
+    padding: 15px 10px;
+    font-family: "Satisfy", cursive;
+}
+
+.links {
+    font-weight: 400;
+}
+
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-bar {
+      display: block;
+      color: var(--main-black);
+      font-size: 3vh;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px){
+    .logo {
+        margin-left: 40px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        width: 70%;
+        margin-left: 40px;
+    }
+
+    .hero > h1 {
+        font-size: 6vh;
+    }
+}
+
+@media (min-width: 1100px) {
+    .menu-bar {
+        display: none;
+    }
+    .hero {
+        width: 40%;
+        margin-left: 40px;
+    }
+    .hero > h1 {
+        font-size: 6vh;
+    }
+    .logo {
+        margin-left: 60px;
+    }
+}
+
+.menu-bar {
+  font-weight: 700;
+  padding: 15px 10px;
+  margin: 0px 10px;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: var(--main-white);
+  background-color: gray;
+  height: 87vh;
+}
+
+button {
+    font-family: var(--main-font);
+    padding: 15px;
+}
+
+.button-1 {
+    background-color: var(--main-black);
+    border: transparent;
+    color: var(--main-white);
+}
+
+.button-1:hover {
+    opacity: 0.7;
+}
+
+.button-2 {
+    background-color: transparent;
+    border: 1px solid var(--main-white);
+    color: var(--main-white);
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.button-2:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+}
+
+.nav-links > .contact {
+    color: var(--main-white);
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: var(--main-black);
+}
+
+.contact:hover {
+    opacity: 0.7;
+}
+
+.nav-links > .join {
+    border: 1px solid var(--main-black);
+    padding: 10px 20px;
+}
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-white);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--main-black);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  opacity: 0.7;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    opacity: 0.7;
+}
