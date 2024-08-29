@@ -64,6 +64,15 @@ a {
       color: var(--main-black);
       font-size: 3vh;
     }
+    .overlay a {
+        font-size: 20px
+    }
+    
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 1100px){
@@ -192,3 +201,43 @@ button {
 .dropdown:hover .dropbtn {
     opacity: 0.7;
 }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--main-black);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;   
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 4vh;
+    color: var(--main-white);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    opacity: 0.7;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 5vh;
+  }

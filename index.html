@@ -29,7 +29,18 @@
             <li class="links join"><a href="#join">Join</a></li>
             <li class="contact links"><a href="#shop" style="color: white;"> Shop </a></li>
         </ol>
-        <div class="menu-bar">&#9776;</div>
+        <div class="menu-bar" onclick="openNav()">&#9776;</div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="#">Products</a>
+              <a href="#">About</a>
+              <a href="#">Support</a>
+              <a href="#">Join</a>
+              <a href="#">Shop</a>
+            </div>
+          </div>
     </nav>
     <div class="hero-section">
         <div class="hero">
@@ -39,7 +50,7 @@
             <button class="button-2">Learn More</button>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/26fcbf9d31.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>
 <!--Developed by Aluru Bala Karthikeya-->
