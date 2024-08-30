@@ -1,11 +1,8 @@
 :root {
     --main-black: rgb(0, 0, 0);
     --main-white: rgb(255, 255, 255);
-    --main-purple: rgb(122, 28, 172);
-    --main-plite: rgb(173, 73, 225);
     --main-logo: "Satisfy", sans-serif;
     --main-font: "Red Hat Display", sans-serif;
-    --main-button: 15px;
 }
 
 html {
@@ -242,11 +239,11 @@ a {
     }
 
     .social-links {
-        margin: 20px;
+        margin: 15px;
     }
 
-    .social-links > i {
-        margin: 15px;
+    .social-logo > i {
+        margin: 10px;
     }
 
     .social-info {
@@ -257,6 +254,7 @@ a {
     .social-info > a {
         margin-top: 20px;
     }
+
 }
 
 @media (min-width: 700px) and (max-width: 1100px){
@@ -278,14 +276,14 @@ a {
     }
 
     .feature-section {
-        flex-direction: column; /* Stack items vertically like mobile */
+        flex-direction: column;
         margin: 20px 30px;
     }
 
     .float-right > img {
-        width: 100%; /* Full width on tablet */
+        width: 100%; 
         height: auto;
-        float: none; /* No floating on tablet */
+        float: none; 
     }
 
     .side-by-side {
@@ -338,6 +336,74 @@ a {
     .contacts {
         margin: 40px;
     }
+
+    .contacts-content {
+        display: flex;
+        gap: 40px;
+        margin: 20px;
+    }
+
+    .contacts {
+        margin: 50px;
+    }
+
+    .contact-links {
+        margin: 50px;
+    }
+
+    .contact-links {
+        display: flex;
+        gap: 25px;
+    }
+
+    .contact-links > .sub-contact {
+        width: 20%;
+    }
+
+    .contact-links > .more-width {
+        width: 50%;
+    }
+
+    .sub-contact > button, input {
+        padding: 15px;
+        margin: 10px;
+        color: var(--main-black);
+        border: 1px solid var(--main-black);
+    }
+
+    .sub-contact > button {
+        background-color: var(--main-white);
+    }
+
+    .sub-contact > button:hover {
+        background-color: var(--main-black);
+        color: white;
+    }
+
+    .sub-contact > a {
+        margin-top: 15px;
+    }
+
+
+    .social-logo > i {
+        margin: 0px 10px;
+    }
+
+    .social-info > a {
+        margin: 0px 15px;
+    }
+
+    .social-links > div, h5 {
+        margin: 50px;
+    }
+
+    .social-links {
+        margin: 10px 25px;
+    }
+
+    .social-logo > i {
+        font-size: 3vh;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -375,7 +441,7 @@ a {
     .about {
         display: flex;
         gap: 20px;
-        padding: 0px 80px;
+        padding: 20px 80px;
     }
 
     .heading-left {
@@ -409,7 +475,7 @@ a {
 
     .why-heading {
         margin: 0px 30px;
-        padding: 0px 40px;
+        padding: 20px 80px;
         width: 50%;
     }
 
@@ -428,16 +494,66 @@ a {
     }
 
     .contact-links {
-        margin: 60px;
+        margin: 70px;
     }
 
     .contact-links {
         display: flex;
         gap: 30px;
     }
+
+    .contact-links > .sub-contact {
+        width: 15%;
+    }
+
+    .contact-links > .more-width {
+        width: 40%;
+    }
+
+    .sub-contact > button, input {
+        padding: 15px;
+        margin: 10px;
+        color: var(--main-black);
+        border: 1px solid var(--main-black);
+    }
+
+    .sub-contact > button {
+        background-color: var(--main-white);
+    }
+
+    .sub-contact > button:hover {
+        background-color: var(--main-black);
+        color: white;
+    }
+
+    .sub-contact > a {
+        margin-top: 15px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .social-logo > i {
+        margin: 0px 10px;
+    }
+
+    .social-info > a {
+        margin: 0px 15px;
+    }
+
+    .social-links > div, h5 {
+        margin: 60px;
+    }
+
+    .social-links {
+        margin: 10px 30px;
+    }
+
 }
 /*Media queries*/
- /*Start of Home section*/
+/*Start of Home section*/
 .hero-section {
   display: flex;
   align-items: center;
@@ -475,55 +591,36 @@ button {
     background-color: var(--main-white);
     color: var(--main-black);
 }
-  /*End of Home section*/
-  /*feature-section*/
-  .feature-section {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-  }
-
-  .button-3 {
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid var(--main-black);
-    transition: 0.5s ease;
-  }
-
-  .button-4 {
-    margin-left: 20px;
-    background-color: transparent;
-    border: none;
-  }
-
-  .button-3:hover {
-    background-color: var(--main-black);
-    color: var(--main-white);
-  }
-
-  .button-4:hover {
-    border: 1ps solid var(--main-black);
-  }
-
-  .animate {
-    display: inline-block; 
+/*End of Home section*/
+/*feature-section*/
+.feature-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
-.animate:hover{
-    animation: animate-right 0.5s;
+.button-3 {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--main-black);
+  transition: 0.5s ease;
 }
 
-@keyframes animate-right {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(20px); /* Larger movement */
-    }
+.button-4 {
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
 }
 
+.button-3:hover {
+  background-color: var(--main-black);
+  color: var(--main-white);
+}
 
-  /*feature-section*/
+.button-4:hover {
+  border: 1ps solid var(--main-black);
+}
+/*feature-section*/
 /*About section*/
 .about {
     margin: 60px 20px;
@@ -550,4 +647,3 @@ button {
     display: flex;
     flex-direction: column;
 }
-
