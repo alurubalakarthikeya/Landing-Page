@@ -8,6 +8,10 @@
     --main-button: 15px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -75,6 +79,7 @@ a {
 
 .contact:hover {
     opacity: 0.7;
+    transform: scaleX(5px);
 }
 
 .nav-links > .join {
@@ -104,7 +109,8 @@ a {
 }
 
 .dropdown-content a:hover {
-  opacity: 0.7;
+    background-color: var(--main-black);
+    color: var(--main-white);
 }
   
 .dropdown:hover .dropdown-content {
@@ -112,7 +118,7 @@ a {
 }
   
 .dropdown:hover .dropbtn {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .overlay {
@@ -137,15 +143,17 @@ a {
 
 .overlay a {
   padding: 8px;
+  margin-bottom: 30px;
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 2.5vh;
   color: var(--main-white);
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  opacity: 0.7;
+  color: var(--main-black);
+  background-color: var(--main-white);
 }
 
 .overlay .closebtn {
@@ -163,15 +171,15 @@ a {
     .menu-bar {
       display: block;
       color: var(--main-black);
-      font-size: 3vh;
+      font-size: 2vh;
     }
     .overlay a {
-        font-size: 20px
+        margin-bottom: 25px;
     }
 
     .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
+    top: 10px;
     right: 35px;
     }
 
@@ -219,6 +227,35 @@ a {
 
     .contact-links {
         margin: 20px;
+    }
+
+    .sub-contact > input, button {
+        padding: 15px;
+        margin: 10px 0px;
+        border: 1px solid var(--main-black);
+        background-color: var(--main-white);
+    }
+
+    .sub-contact > button:hover {
+        background-color: var(--main-black);
+        color: white;
+    }
+
+    .social-links {
+        margin: 20px;
+    }
+
+    .social-links > i {
+        margin: 15px;
+    }
+
+    .social-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-info > a {
+        margin-top: 20px;
     }
 }
 
@@ -422,7 +459,8 @@ button {
 }
 
 .button-1:hover {
-    opacity: 0.7;
+    background-color: var(--main-white);
+    color: black;
 }
 
 .button-2 {
@@ -466,6 +504,24 @@ button {
   .button-4:hover {
     border: 1ps solid var(--main-black);
   }
+
+  .animate {
+    display: inline-block; 
+}
+
+.animate:hover{
+    animation: animate-right 0.5s;
+}
+
+@keyframes animate-right {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(20px); /* Larger movement */
+    }
+}
+
 
   /*feature-section*/
 /*About section*/
